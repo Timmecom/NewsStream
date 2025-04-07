@@ -1,0 +1,24 @@
+newsstream/
+├── LICENSE
+├── README.md
+├── pyproject.toml
+├── setup.py
+├── newsstream/
+│   ├── __init__.py
+│   ├── api.py              # Main interface for users
+│   ├── sources/            # News source implementations
+│   │   ├── __init__.py
+│   │   ├── base.py         # Abstract base class for news sources
+│   │   ├── newsapi.py      # NewsAPI.org integration
+│   │   └── gnews.py        # Google News RSS integration
+│   ├── models/             # Data models
+│   │   ├── __init__.py
+│   │   └── article.py      # Article data class
+│   └── utils/              # Utility functions
+│       ├── __init__.py
+│       ├── cache.py        # Simple caching
+│       └── html_parser.py  # HTML parsing for full text extraction
+└── tests/                  # Unit tests
+    ├── __init__.py
+    ├── test_api.py
+    └── test_sources.py
